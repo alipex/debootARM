@@ -11,7 +11,7 @@ echo -e "| Run amd64 programs on aarch64              https://github.com/alipex/
 echo -e "|                                                                                |"
 echo -e "+--------------------------------------------------------------------------------+"
 
-distro=cat
+distro=cat /etc/*release
 
 echo -e "\n[01] Gathering information about the system..."
-echo -e "\n     Detected distribution:" +
+echo -e "\n     Detected distribution:" + $distro
